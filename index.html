@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Detectar Errores de Tránsito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <section id="inicio">
+        <h1>Bienvenido al Juego de Detectar Errores de Tránsito</h1>
+        <p>En la vía somos peatones, pasajeros,
+            conductores, ciclistas…y todos debemos comportarnos
+            de manera respetuosa y segura;
+            cuidándonos y cuidando a los demás.</p>
+            
+        <p> Te retamos a encontrar a aquellas personas
+            que se están poniendo en peligro, que arriesgan la seguridad
+            de los demás o que no respetan el espacio compartido.</p>
+        <p>Encuentra los 11 errores de tránsito en la imagen antes de que se acabe el tiempo.</p>
+        <button id="empezar">Empecemos</button>
+    </section>
+
+    <section id="mensaje-recordar" class="hidden" >
+
+        <h2>Recuerda que los comportamientos
+            incorrectos en la vía son:</h2>
+        <ol class="horizontal-list">
+            <li>Aquellos que ponen en peligro tu seguridad.</li>
+            <li>Aquellos que ponen en riesgo la seguridad de los demás.</li>
+            <li>Aquellos que no respetan a los demás usuarios de la vía.</li>
+            <li>Aquellos que maltratan los espacios que compartimos todos.</li>
+        </ol>
+        <button id="start-button"> ¿Listo? ¡A buscar!</button>
+
+    </section>
+
+    <section id="juego" class="hidden">
+        <h2 class="instruccion">Para marcar los comportamientos incorrectos,
+            solo debes hacer clic sobre ellos.</h2>
+        <div id="contador">Tiempo restante: <span id="tiempo">2:00</span></div>
+        <div id="errores">Errores encontrados: <span id="contador-errores">0</span></div>
+        <div id="imagen-container">
+            <img id="imagen" src="img/ENCUENTRA LOS ERRORES.jpg" alt="Imagen de tránsito">
+            <img src="img/icon-check.png" alt="Error 1" class="error-icon opacity" id="error_1" data-mensaje="¡Bien ! Recuerde que nunca debemos dejar que los pasajeros se bajen en lugares no utilizados. Siempre deben hacerlo en el terminal de transportes o en la agencia asignada.">
+            <img src="img/icon-check.png" alt="Error 2" class="error-icon opacity" id="error_2" data-mensaje="¡Bien! El carro está estacionado en la zona que tiene prohibido parquear. Recuerde que debemos respetar las señales de tránsito y sólo realizar estas acciones en caso de emergencia y con la señalización respectiva.">
+            <img src="img/icon-check.png" alt="Error 3" class="error-icon opacity" id="error_3" data-mensaje="¡Bien! Cuando el vehículo está estacionado en un parqueadero es mejor ubicarlo de frente para tener una mayor visibilidad o pedir ayuda para retroceder con seguridad.">
+            <img src="img/icon-check.png" alt="Error 4" class="error-icon opacity" id="error_4" data-mensaje="¡Bien! Las personas no deberían jugar en la acera porque es peligroso. Sin embargo, tú siempre debes mantener un manejo defensivo por si alguien realizar acciones peligrosas. No estamos solos en la vía.">
+            <img src="img/icon-check.png" alt="Error 5" class="error-icon opacity" id="error_5" data-mensaje="¡Eso es! El conductor ha estacionado dentro de la berma y en doble carril, es decir, donde está prohibido estacionar. Además, está sobre el cruce peatonal. ¿Y si fuera de noche y no hay tanto tránsito de vehículo, ni personas? No importa, siempre debemos respetar las normas.">
+            <img src="img/icon-check.png" alt="Error 6" class="error-icon opacity" id="error_6" data-mensaje="¡Bien! Además de estar mal estacionado, el señor está descargando cosas en un lugar no autorizado. Busque siempre su seguridad y la de su vehículo.">
+            <img src="img/icon-check.png" alt="Error 7" class="error-icon opacity" id="error_7" data-mensaje="¡Bien! Los adelantamientos sólo se deben realizar en las vías que tienen una señal central entre cortada. Cuando el carro recolector está por delante, debemos conservar una distancia apropiada y no adelantar en ninguna circunstancia.">
+            <img src="img/icon-check.png" alt="Error 8" class="error-icon opacity" id="error_8" data-mensaje="¡Bien! El ciclista debe ir por la derecha de la pista. Sin embargo, usted no considere adelantarlo, ni utilizar de forma excesiva el pito porque esto podría desequilibrarlo y causar una tragedia.">
+            <img src="img/icon-check.png" alt="Error 9" class="error-icon opacity" id="error_9" data-mensaje="¡Eso es! El recolector no debería ocupar la mitad de la calle para recoger las bolsas de basura. Por eso debemos recordar no realizar adelantamientos cuando hay un carro recolector en la vía. Siempre mantener un manejo defensivo.">
+            <img src="img/icon-check.png" alt="Error 10" class="error-icon opacity" id="error_10" data-mensaje="¡Bien! Aunque se encuentran en un paso peatonal, se debe tener en cuenta también a las personas en condición de discapacidad y respetar las rampas. Siempre recuerde cederles el paso.">
+            <img src="img/icon-check.png" alt="Error 11" class="error-icon opacity" id="error_11" data-mensaje="¡Bien! Las señales de tránsito son importantes para orientar nuestro comportamiento vial. Sin embargo, recordemos que en zonas urbanas la velocidad máxima es de 50 a 60 km/h.">
+            
+            <span id="mensaje-error" class="hidden"></span>
+        </div>
+        
+    </section>
+
+    <section id="fin" class="hidden">
+        <h2>Juego terminado</h2>
+        <p>Has encontrado <span id="errores-encontrados">0</span> errores.</p>
+        <p id="desempeno"></p>
+        <button id="restart-button">Reiniciar Juego</button>
+    </section>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

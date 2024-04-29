@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 25, 25);
+}
+
+
+.container {
+    width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #32a81b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 10px solid darkgreen;
+}
+
+.container p {
+    font-size: 36px;
+    color: #ffffff; /* Texto oscuro */
+}
+
+.container button {
+    margin-top: 20px;
+}
+
+
+h1, h2, h3 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+.horizontal-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  
+  .horizontal-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  .horizontal-list li {
+    margin-right: 20px; /* Espacio entre elementos */
+    padding: 12px 12px; /* Espacio interior */
+    margin-top: 50px;
+    border-radius: 20px; /* Diseño redondeado */
+    background-color: darkgreen; /* Color de fondo */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color blanco */
+    position: relative; /* Posición relativa para el pseudoelemento */
+    text-align: center; /* Alinear texto al centro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .horizontal-list li::before {
+    counter-increment: item;
+    content: counter(item); /* Mostrar el número */
+    position: absolute; /* Posición absoluta */
+    top: -55px; /* Ajustar la posición del número */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar horizontalmente */
+    width: 50px; /* Ancho del número */
+    height: 50px; /* Altura del número */
+    font-size: 20px;
+    line-height: 50px; /* Alinear el número verticalmente */
+    background-color: yellowgreen; /* Color del número */
+    border: 2px solid #727272; /* Borde del número */
+    border-radius: 50%; /* Redondear el número */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra para efecto tridimensional */
+  }
+  
+
+
+button {
+    background-color: #033d03; /* Azul pastel */
+    color: #ffffff; /* Texto oscuro */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000; /* Azul pastel más oscuro al pasar el mouse */
+}
+
+#inicio, #juego, #fin {
+    margin-bottom: 20px;
+    
+}
+
+#imagen-container {
+    position: relative;
+    display: flex;
+}
+
+#imagen {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contador, #errores {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f5f5dc;
+}
+
+#tiempo {
+    color: #51fff1; /* Rojo pastel */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#contador-errores, #errores-encontrados {
+    color: #b60303; /* Morado pastel */
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Estilos para el mensaje de error */
+#mensaje-error {
+    max-width: 1000px;
+    top: 30%;
+    left: 81%;
+    position: absolute;
+    background-color: #32a81b;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight:  bold;
+
+}
+
+
+
+.error-icon {
+    border-radius: 100%;
+    position: absolute;
+    width: 35px; /* Ajusta el tamaño según sea necesario */
+
+    background-image: url('https://www.mapfre.com.py/juego-encuentra-errores/assets/images/bg-game.jpg');
+    background-size: cover;
+
+}
+
+#error_1 {
+    top: 30%; /* Ajusta las coordenadas Y */
+    left: 12%; /* Ajusta las coordenadas X */
+}
+
+#error_2 {
+    top: 24%; /* Ajusta las coordenadas Y */
+    left: 15%; /* Ajusta las coordenadas X */
+}
+#error_3 {
+    top: 15%; /* Ajusta las coordenadas Y */
+    left: 32%; /* Ajusta las coordenadas X */
+}
+#error_4 {
+    top: 35%; /* Ajusta las coordenadas Y */
+    left: 38%; /* Ajusta las coordenadas X */
+}
+#error_5 {
+    top: 30%; /* Ajusta las coordenadas Y */
+    left: 55%; /* Ajusta las coordenadas X */
+}
+#error_6 {
+    top: 33%; /* Ajusta las coordenadas Y */
+    left: 65%; /* Ajusta las coordenadas X */
+}
+#error_7 {
+    top: 48%; /* Ajusta las coordenadas Y */
+    left: 32%; /* Ajusta las coordenadas X */
+}
+#error_8 {
+    top: 45%; /* Ajusta las coordenadas Y */
+    left: 55%; /* Ajusta las coordenadas X */
+}
+#error_9 {
+    top: 54%; /* Ajusta las coordenadas Y */
+    left: 40%; /* Ajusta las coordenadas X */
+}
+#error_10 {
+    top: 57%; /* Ajusta las coordenadas Y */
+    left: 68%; /* Ajusta las coordenadas X */
+}
+#error_11 {
+    top: 75.3%; /* Ajusta las coordenadas Y */
+    left: 29.5%; /* Ajusta las coordenadas X */
+}
+/* Agrega las coordenadas para los demás iconos de error */
+
+.opacity {
+    opacity: 0%;
+}
