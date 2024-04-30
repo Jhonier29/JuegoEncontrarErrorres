@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const desempenoP = document.getElementById('desempeno');
     const mensajeError = document.getElementById('mensaje-error');
     const mensajeRecordar = document.getElementById('mensaje-recordar');
+    const mensajeExcelente = document.getElementById('mensajeExcelente');
 
     let tiempoRestante = 120;
     let contadorErrores = 0;
@@ -92,7 +93,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function endGame() {
         juegoSection.classList.add('hidden');
         finSection.classList.remove('hidden');
-        if(contadorErrores<=11 && contadorErrores>=9){
+        if (contadorErrores == 11){
+            mensajeExcelente.classList.remove('hidden');
+        }else if(contadorErrores<11 && contadorErrores>=9){
             desempenoP.textContent="Felicitaciones";
         }else if(contadorErrores<9 && contadorErrores>=6){
             desempenoP.textContent="Bien hecho";
