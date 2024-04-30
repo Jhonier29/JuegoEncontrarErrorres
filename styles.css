@@ -157,59 +157,72 @@ button:hover {
 .error-icon {
     border-radius: 100%;
     position: absolute;
-    width: 35px; /* Ajusta el tamaño según sea necesario */
 
+    transform: translate(-50%, -50%);
     background-image: url('https://www.mapfre.com.py/juego-encuentra-errores/assets/images/bg-game.jpg');
     background-size: cover;
 
 }
 
 #error_1 {
-    top: 30%; /* Ajusta las coordenadas Y */
+    top: 35%; /* Ajusta las coordenadas Y */
     left: 12%; /* Ajusta las coordenadas X */
+    width: 75px;
 }
 
 #error_2 {
-    top: 24%; /* Ajusta las coordenadas Y */
-    left: 15%; /* Ajusta las coordenadas X */
+    top: 28%; /* Ajusta las coordenadas Y */
+    left: 20%; /* Ajusta las coordenadas X */
+    width: 75px;
+
 }
 #error_3 {
     top: 15%; /* Ajusta las coordenadas Y */
     left: 32%; /* Ajusta las coordenadas X */
+    width: 100px;
+
 }
 #error_4 {
     top: 35%; /* Ajusta las coordenadas Y */
-    left: 38%; /* Ajusta las coordenadas X */
+    left: 40%; /* Ajusta las coordenadas X */
+    width: 120px;
 }
 #error_5 {
     top: 30%; /* Ajusta las coordenadas Y */
-    left: 55%; /* Ajusta las coordenadas X */
+    left: 57%; /* Ajusta las coordenadas X */
+    width: 100px;
 }
 #error_6 {
     top: 33%; /* Ajusta las coordenadas Y */
-    left: 65%; /* Ajusta las coordenadas X */
+    left: 68%; /* Ajusta las coordenadas X */
+    width: 100px;
 }
 #error_7 {
-    top: 48%; /* Ajusta las coordenadas Y */
-    left: 32%; /* Ajusta las coordenadas X */
+    top: 50%; /* Ajusta las coordenadas Y */
+    left: 35%; /* Ajusta las coordenadas X */
+    width: 100px;
 }
 #error_8 {
-    top: 45%; /* Ajusta las coordenadas Y */
-    left: 55%; /* Ajusta las coordenadas X */
+    top: 48%; /* Ajusta las coordenadas Y */
+    left: 57%; /* Ajusta las coordenadas X */
+    width: 100px;
 }
 #error_9 {
-    top: 54%; /* Ajusta las coordenadas Y */
-    left: 40%; /* Ajusta las coordenadas X */
+    top: 55%; /* Ajusta las coordenadas Y */
+    left: 44%; /* Ajusta las coordenadas X */
+    width: 100px;
 }
 #error_10 {
     top: 57%; /* Ajusta las coordenadas Y */
-    left: 68%; /* Ajusta las coordenadas X */
+    left: 70%; /* Ajusta las coordenadas X */
+    width: 100px;
 }
 #error_11 {
-    top: 75.3%; /* Ajusta las coordenadas Y */
-    left: 29.5%; /* Ajusta las coordenadas X */
+    top: 77.7%; /* Ajusta las coordenadas Y */
+    left: 31.2%; /* Ajusta las coordenadas X */
+    width: 100px;
+
 }
-/* Agrega las coordenadas para los demás iconos de error */
 
 .opacity {
     opacity: 0%;
