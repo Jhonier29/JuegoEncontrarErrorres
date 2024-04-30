@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let tiempoRestante = 120;
     let contadorErrores = 0;
 
-
     // Obtener todas las imágenes de error
     const imagenesError = document.querySelectorAll('.error-icon');
 
@@ -41,13 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!imagenError.classList.contains('contada')) {
                 // Incrementar el contador de errores
                 contadorErrores++;
-
                 // Actualizar el valor del contador en la interfaz
                 contadorErroresSpan.textContent = contadorErrores;
-
                 // Agregar la clase 'contada' a la imagen para indicar que ya ha sido contada
                 imagenError.classList.add('contada');
-                imagenError.classList.remove('opacity') ;
+                imagenError.classList.remove('opacity');
+                imagenError.style.width = '35px';
 
             } 
 
